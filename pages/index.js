@@ -13,7 +13,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          We are a Digital Marketing , Online Advertising, Applications, Management and Development of Online Content and Traffic Management Company.
+          We are a Digital Marketing, Online Advertising, Applications, Management and Development of <span className='underline'>Online Content</span> and Traffic Management Company.
         </p>
         {/* <p>
           We create experiences for your customers that inspire action, build loyalty, and unlock growth across channels and media—from retail, to social, to Web3, the metaverse and beyond. Here are our products.
