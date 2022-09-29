@@ -3,13 +3,14 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import { MegaphoneIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const name = 'CodeGraph'
 export const siteTitle = 'Management and Development of Online Content'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.container + ' h-screen'}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -30,13 +31,13 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/profile.png"
-              className={utilStyles.borderCircle}
+              src="/images/CodeGraph.svg"
+              className={utilStyles.borderCircle + ' logo'}
               height={144}
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className={utilStyles.heading2Xl + ' tracking-wider'}>{name}</h1>
           </>
         ) : (
           <>
@@ -44,11 +45,12 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/images/profile.png"
+                  src="/images/CodeGraph.svg"
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
                   alt={name}
+                  style={{ backgroundColor: 'white' }}
                 />
               </a>
             </Link>

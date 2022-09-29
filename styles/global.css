@@ -2,16 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --foregroundColor: #f0ebd8;
+  --backgroundColor: #0d1321;
+}
+
+@font-face {
+  font-family: 'Bebas';
+  src: url('../fonts/bebasneue-regular-webfont.woff2') format('woff2'),
+    url('../fonts/bebasneue-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'FolioLight';
+  src: url('../fonts/foliol-webfont.woff2') format('woff2'),
+    url('../fonts/foliol-webfont.woff') format('woff');
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: system-ui;
   line-height: 1.6;
   font-size: 18px;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--backgroundColor);
+  color: var(--foregroundColor);
+  font-family: FolioLight;
+}
+
+.logo {
+  background-color: var(--foregroundColor);
 }
 
 * {
@@ -19,7 +40,7 @@ body {
 }
 
 a {
-  color: white;
+  color: var(--foregroundColor);
   text-decoration: none;
 }
 
@@ -30,4 +51,8 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+
+h1 {
+  font-family: Bebas;
 }
