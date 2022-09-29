@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import Typed from "react-typed";
 import { BoltIcon, ChatBubbleBottomCenterTextIcon, GlobeAltIcon, ScaleIcon } from '@heroicons/react/24/outline'
 
 import Layout, { siteTitle } from '../components/layout'
@@ -19,9 +19,24 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <div>
-        <div className="mx-auto py-8 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-8 lg:px-8">
+        <div className="mx-auto h-24 py-8 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-8 lg:px-8">
           <h2 className="sm:mx-6 text-xl font-bold tracking-tight sm:text-xl">
-            <span className="block"> We are a Digital Marketing, Online Advertising, Applications, Management and Development of <span className='underline'>Online Content</span> and Traffic Management</span>
+            <span className="block">
+              We have expertise in <Typed
+                strings={[
+                  "Digital Marketing ",
+                  "Online Advertising",
+                  "Applications",
+                  "Management and of Online Content",
+                  "Traffic Management"
+                ]}
+                typeSpeed={70}
+                backSpeed={50}
+                loop
+              />
+              {/* Digital Marketing, Online Advertising, Applications, Management and Development of 
+            <span className='underline'>Online Content</span> and Traffic Management */}
+            </span>
           </h2>
         </div>
       </div>
