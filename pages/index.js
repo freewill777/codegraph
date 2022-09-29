@@ -21,7 +21,7 @@ export default function Home({ allPostsData }) {
       <div>
         <div className="mx-auto h-24 py-8 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-8 lg:px-8">
           <h2 className="sm:mx-6 text-xl font-bold tracking-tight sm:text-xl">
-            <span className="block">
+            <span className="block" >
               We have expertise in <Typed
                 strings={[
                   "Digital Marketing ",
@@ -33,6 +33,7 @@ export default function Home({ allPostsData }) {
                 typeSpeed={70}
                 backSpeed={50}
                 loop
+                className='accent-bg'
               />
               {/* Digital Marketing, Online Advertising, Applications, Management and Development of 
             <span className='underline'>Online Content</span> and Traffic Management */}

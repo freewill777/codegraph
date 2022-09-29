@@ -5,6 +5,7 @@
 :root {
   --foregroundColor: #f0ebd8;
   --backgroundColor: #0d1321;
+  --accentColor: #a43420;
 }
 
 @font-face {
@@ -29,6 +30,10 @@ body {
   background-color: var(--backgroundColor);
   color: var(--foregroundColor);
   font-family: FolioLight;
+}
+
+.accent-bg {
+  background-color: var(--accentColor);
 }
 
 .logo {
