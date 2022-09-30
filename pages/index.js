@@ -27,7 +27,7 @@ export default function Home({ allPostsData }) {
                   "Digital Marketing ",
                   "Online Advertising",
                   "Applications",
-                  "Management and of Online Content",
+                  "Online Content Management",
                   "Traffic Management"
                 ]}
                 typeSpeed={70}
