@@ -33,9 +33,9 @@ body {
 
 body {
   background:
-    linear-gradient(115deg,
-      var(--backgroundColor) 30%,
-      var(--foregroundColor) 410%);
+    linear-gradient(15deg,
+      var(--backgroundColor) 50%,
+      var(--accentColor) 150%);
   background-blend-mode: normal,
 }
 
